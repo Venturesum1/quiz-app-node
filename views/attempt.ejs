@@ -1,0 +1,20 @@
+<!-- attempt.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz Attempt</title>
+</head>
+<body>
+  <h1>Quiz Attempt Page</h1>
+  <!-- Quiz content goes here -->
+  <form action="/attempt" method="post">
+    <input type="hidden" name="quizSlug" value="<%= quizSlug %>">
+    <input type="hidden" name="username" value="<%= username %>">
+    <!-- Other form fields for quiz questions and answers -->
+    <button type="submit">Submit Attempt</button>
+  </form>
+</body>
+</html>
